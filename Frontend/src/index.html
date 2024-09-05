@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการครุภัณฑ์</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        /* สไตล์เพิ่มเติม */
+        .active {
+            background-color: #e2e8f0; /* สีพื้นหลังที่ต้องการ */
+            border-radius: 0.375rem; /* มุมโค้งที่ต้องการ */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex items-center bg-gray-100 p-4">
+        <img src="image/logo.svg" alt="Logo" class="h-8 w-auto mr-2">
+        <span class="text-pink-600 text-lg font-bold"></span>
+    </div>
+    
+</body>
+
+<body class="bg-gray-50 text-gray-600">
+
+        <div class="flex">
+
+            <!-- Sidebar -->
+            <div class="w-1/4 bg-gray-200 p-4">
+                <div class="mb-8">
+                    <!-- <img src="image/logo.svg" alt="Logo" class="mb-4"> -->
+                    <h1 class="text-pink-600 font-semibold text-xl">ระบบจัดการครุภัณฑ์</h1>
+                    <p class="text-gray-600">คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</p>
+                    <p class="text-gray-600">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                </div>
+
+                <ul class="space-y-4">
+                    <!-- <li><a href="#" class="block p-2 text-pink-600 bg-gray-300 rounded">เพิ่มข้อมูล</a></li> -->
+                    <li>
+                        <a href="#" class="block p-2 hover:text-pink-600  hover:bg-gray-300  flex items-center justify-between">
+                            เพิ่มข้อมูล
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5L5 5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19L19 19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5L16 5M12 15L12 4M12 15L8 11M12 15L16 11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                       
+                    <li>
+                        <a href="#" class="block p-2 hover:text-pink-600 hover:bg-gray-300 flex items-center justify-between">
+                            ลบข้อมูล
+                            <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.6667 21.3333C18.6667 22.3942 18.2452 23.4116 17.4951 24.1618C16.7449 24.9119 15.7275 25.3333 14.6667 25.3333H5.33333C4.27247 25.3333 3.25505 24.9119 2.50491 24.1618C1.75476 23.4116 1.33333 22.3942 1.33333 21.3333V5.33333H0V1.33333H6L7.33333 0H12.6667L14 1.33333H20V5.33333H18.6667V21.3333ZM2.66667 5.33333V21.3333C2.66667 22.0406 2.94762 22.7189 3.44772 23.219C3.94781 23.719 4.62609 24 5.33333 24H14.6667C15.3739 24 16.0522 23.719 16.5523 23.219C17.0524 22.7189 17.3333 22.0406 17.3333 21.3333V5.33333H2.66667ZM18.6667 4V2.66667H13.3333L12 1.33333H8L6.66667 2.66667H1.33333V4H18.6667ZM5.33333 8H6.66667V21.3333H5.33333V8ZM13.3333 8H14.6667V21.3333H13.3333V8Z" fill="black"/>
+                            </svg>
+                                
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block p-2 hover:text-pink-600 hover:bg-gray-300  flex items-center justify-between">
+                            แก้ไขข้อมูล
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 14.0002V17.0002C21 19.2093 19.2091 21.0002 17 21.0002H7C4.79086 21.0002 3 19.2093 3 17.0002V7.00019C3 4.79105 4.79086 3.00019 7 3.00019H10M8 16.0002V11.0002L15.5858 3.4144C16.3668 2.63335 17.6332 2.63335 18.4142 3.4144L20.5858 5.58597C21.3668 6.36702 21.3668 7.63335 20.5858 8.4144L13 16.0002H8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block p-2 hover:text-pink-600 hover:bg-gray-300 flex items-center justify-between">
+                            ดูข้อมูลพัสดุ
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 20.5L9.52574 14.4743M9.52574 14.4743C8.3624 13.3109 7.64286 11.7038 7.64286 9.92857C7.64286 6.37817 10.521 3.5 14.0714 3.5C17.6218 3.5 20.5 6.37817 20.5 9.92857C20.5 13.479 17.6218 16.3571 14.0714 16.3571C12.2962 16.3571 10.6891 15.6376 9.52574 14.4743Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>        
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="w-3/4 p-8">
+                <h2 class="text-xl font-semibold text-pink-600 mb-4">เพิ่มข้อมูลพัสดุ</h2>
+
+                <form action="#">
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ใส่ภาพ</label>
+                        <input type="file" class="border border-gray-300 p-2 rounded">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">เลขที่ใบสั่งซื้อ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">หมวดหมู่การใช้งาน</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ประเภท</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ประเภทย่อย</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">หน่วยนับ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">รายละเอียดพัสดุ (สี, ขนาด, ยี่ห้อ)</label>
+                        <textarea class="border border-gray-300 p-2 rounded w-full"></textarea>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">เเหล่งที่มา</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">จำนวนที่ได้รับซื้อ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">วันที่ได้รับซื้อ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">จำนวนคงเหลือ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ราคาต่อหน่วย</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ราคาคงเหลือ</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ราคารวม</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">ผู้บันทึก</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-700">วันที่บันทึก</label>
+                        <input type="text" class="border border-gray-300 p-2 rounded w-full">
+                    </div>
+
+                    <button type="submit" class="bg-yellow-400 text-white px-4 py-2 rounded">บันทึก</button>
+                </form>
+            </div>
+        </div>
+
+</html>
